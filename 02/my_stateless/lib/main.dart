@@ -19,7 +19,14 @@ void main(){
             .center,
             children: <Widget>[
               Text('I am Line 1'),
-              Text('I am Line 2')
+              Text('I am Line 2'),
+              RaisedButton(
+                onPressed: (){},
+                child: Text('Login here'),
+                color: Colors.blue,
+                textColor: Colors.white,
+                splashColor: Colors.green,
+                )
             ],
           ),
           ),

@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 
 void main(){
+  runApp(MyApp());
+}
 
-  var app = MaterialApp(
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context){
+    return MaterialApp(
       title: 'Piyush App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
@@ -22,7 +28,7 @@ void main(){
               Text('I am Line 2'),
               RaisedButton(
                 onPressed: (){},
-                child: Text('Login here'),
+                child: Text('Sign Up'),
                 color: Colors.blue,
                 textColor: Colors.white,
                 splashColor: Colors.green,
@@ -39,6 +45,5 @@ void main(){
           ),
       )
   );
-
-  runApp(app);
+  }
 }

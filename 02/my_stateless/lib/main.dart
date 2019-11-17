@@ -12,8 +12,17 @@ void main(){
       home: Scaffold(
         appBar: AppBar(
           title: Text('Flutter'),
-          
         ),
+        body:Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment
+            .center,
+            children: <Widget>[
+              Text('I am Line 1'),
+              Text('I am Line 2')
+            ],
+          ),
+          ),
         floatingActionButton: FloatingActionButton(
           onPressed: (){},
           child: Icon(

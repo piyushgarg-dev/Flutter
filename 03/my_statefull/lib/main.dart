@@ -47,25 +47,30 @@ class MyButtonState extends State<MyButton>{
     return Scaffold(
       appBar: AppBar(
         title: Text('My Stateful app'),
-        backgroundColor: Colors.orange,
+        backgroundColor: Colors.purple,
       ),
       
       body:Container(child:Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-          Text('[$counter] $defaultText', style: TextStyle(fontSize: 30.0)),
+          Text(defaultText, style: TextStyle(fontSize: 30.0)),
+          Text('Made By Piyush'),
           Padding(padding: EdgeInsets.all(10.0),),
-          RaisedButton(
-          onPressed: displaySNumbers,
-          child: Text('Call Numbers'),
-          color: Colors.orange,
-          textColor: Colors.white,
-          )
+          
         ],
        ),
       ),
-      )
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: displaySNumbers,
+        backgroundColor: Colors.purple,
+        
+        child:Icon(
+          Icons.add
+        )
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 
